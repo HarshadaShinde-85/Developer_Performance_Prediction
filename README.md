@@ -44,10 +44,8 @@ NumPy
 Matplotlib / Seaborn
 Flask (optional for deployment)
 Jupyter Notebook
-📈 Machine Learning Models (Example)
 
-You can use:
-
+📈 Machine Learning Models used:
 Linear Regression
 Random Forest Regressor
 Decision Tree
