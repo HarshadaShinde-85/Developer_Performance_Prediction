@@ -4,7 +4,7 @@ The Developer Performance Prediction System is a Machine Learning–based applic
 
 This project helps organizations evaluate developer efficiency, identify improvement areas, and make data-driven decisions for team management and resource allocation.
 
-📌 Features
+## 📌 Features
 
 ✅ Predict developer performance using ML models
 ✅ Analyze productivity metrics and coding efficiency
@@ -13,7 +13,7 @@ This project helps organizations evaluate developer efficiency, identify improve
 ✅ Data preprocessing and visualization support
 ✅ Model training, evaluation, and prediction pipeline
 
-🧠 Machine Learning Workflow
+## 🧠 Machine Learning Workflow
 
 The system follows these steps:
 
@@ -24,7 +24,7 @@ The system follows these steps:
 5️⃣ Performance Evaluation
 6️⃣ Prediction Generation
 
-📊 Input Parameters
+## 📊 Input Parameters
 
 The prediction model considers:
 
@@ -36,7 +36,7 @@ Productivity Score
 Work Consistency
 Project Complexity Handling
 
-⚙️ Technologies Used
+## ⚙️ Technologies Used
 Python 🐍
 Scikit-learn
 Pandas
@@ -45,20 +45,18 @@ Matplotlib / Seaborn
 Flask (optional for deployment)
 Jupyter Notebook
 
-📈 Machine Learning Models used:
+## 📈 Machine Learning Models used:
 Linear Regression
 Random Forest Regressor
 Decision Tree
 Support Vector Machine
 Gradient Boosting
 
-(Random Forest usually gives strong performance for this type of dataset.)
-
-📜 License
+## 📜 License
 
 This project is licensed under the MIT License.
 
-👩‍💻 Author
+## 👩‍💻 Author
 
 Harshada Shinde
 MCA Student | Machine Learning Enthusiast | Software Developer
