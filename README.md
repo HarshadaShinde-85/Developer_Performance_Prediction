@@ -1,62 +1,153 @@
-# 🚀 Developer Performance Prediction System
+# 📊 Developer Performance Prediction System
+🚀 Project Overview
 
-The Developer Performance Prediction System is a Machine Learning–based application designed to analyze and predict software developers’ performance using historical project-related data such as task completion rate, coding efficiency, experience level, bug count, and productivity metrics.
+The Developer Performance Prediction System is a Machine Learning–based web application that predicts developer performance (Low, Medium, High) using productivity-related metrics such as coding hours, errors, stress level, commits, and complexity.
 
-This project helps organizations evaluate developer efficiency, identify improvement areas, and make data-driven decisions for team management and resource allocation.
+The system includes:
 
-## 📌 Features
+Secure login & registration
+OTP-based password reset (Email + SMS)
+Machine learning prediction 
+Interactive dashboard
+SQLite database integration
+Flask web interface
 
-✅ Predict developer performance using ML models
-✅ Analyze productivity metrics and coding efficiency
-✅ Evaluate task completion rate and bug frequency
-✅ Support decision-making for project managers
-✅ Data preprocessing and visualization support
-✅ Model training, evaluation, and prediction pipeline
+This project demonstrates the integration of Machine Learning + Web Development + Authentication System in a real-world productivity analytics solution.
 
-## 🧠 Machine Learning Workflow
+# 🎯 Key Features
 
-The system follows these steps:
+✅ Developer registration with profile details
+✅ Secure login authentication
+✅ Forgot password with OTP verification
+✅ Email notification on registration
+✅ SMS notification support (Twilio)
+✅ Performance prediction using ML model
+✅ Clean responsive UI with HTML + CSS
+✅ SQLite database integration
+✅ Flask backend architecture
 
-1️⃣ Data Collection
-2️⃣ Data Preprocessing
-3️⃣ Feature Selection
-4️⃣ Model Training
-5️⃣ Performance Evaluation
-6️⃣ Prediction Generation
+# 🧠 Machine Learning Model
 
-## 📊 Input Parameters
+The system uses:
 
-The prediction model considers:
+Logistic Regression classifier
+Feature scaling with StandardScaler
+Encoded categorical inputs
+Performance prediction categories:
+Output	Meaning
+0	Low Performance
+1	Medium Performance
+2	High Performance
 
-Task Completion Rate
-Coding Efficiency
-Experience Level
-Number of Bugs
-Productivity Score
-Work Consistency
-Project Complexity Handling
+# 📂 Project Structure
+Developer-Performance-Prediction/
+│
+├── app.py
+├── train_model.py
+├── model.pkl
+├── users.db
+│
+├── templates/
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   ├── result.html
+│   ├── forgot_password.html
+│   ├── verify_otp.html
+│   └── new_password.html
+│
+├── static/
+│   └── style.css
+│
+├── developer_data.csv
+├── README.md
 
-## ⚙️ Technologies Used
-Python 🐍
+# ⚙️ Technologies Used
+Frontend:
+HTML5
+CSS3
+
+Backend:
+Python
+Flask
+SQLite
+
+Machine Learning:
 Scikit-learn
 Pandas
 NumPy
-Matplotlib / Seaborn
-Flask (optional for deployment)
-Jupyter Notebook
 
-## 📈 Machine Learning Models used:
-Linear Regression
-Random Forest Regressor
-Decision Tree
-Support Vector Machine
-Gradient Boosting
+Authentication Services:
+Gmail SMTP
+Twilio SMS API
 
-## 📜 License
+# 🛠️ Installation Steps
 
-This project is licensed under the MIT License.
+Follow these steps to run the project locally:
 
-## 👩‍💻 Author
+1️⃣ Clone Repository
+git clone https://github.com/yourusername/developer-performance-prediction.git
+cd developer-performance-prediction
+2️⃣ Create Virtual Environment
+python -m venv venv
+venv\Scripts\activate
+3️⃣ Install Dependencies
+pip install flask pandas numpy scikit-learn twilio
+4️⃣ Train Model (if needed)
+python train_model.py
+
+This creates:
+
+model.pkl
+
+5️⃣ Run Application
+python app.py
+
+Open browser:
+
+http://127.0.0.1:5000
+
+# 🔐 Authentication Workflow
+
+The system supports:
+
+Registration confirmation email
+SMS alerts on account creation
+OTP verification for password reset
+Secure session-based login/logout
+
+# 📊 Input Features Used for Prediction
+
+The model predicts performance using:
+
+Hours Coding
+Lines of Code
+Bugs Found
+Bugs Fixed
+AI Usage Hours
+Sleep Hours
+Cognitive Load
+Task Success Rate
+Coffee Intake
+Stress Level
+Task Duration Hours
+Commits
+Errors
+Complexity
+
+# 📈 Prediction Output Example
+Predicted Developer Performance: High Performance ✅
+
+# 💡 Future Improvements
+
+Planned enhancements:
+
+Role-based admin dashboard
+Performance analytics charts
+Deployment on cloud (Render / AWS)
+Real-time productivity tracking API
+
+# 👩‍💻 Author
 
 Harshada Shinde
-MCA Student | Machine Learning Enthusiast | Software Developer
+Developer Performance Prediction System
