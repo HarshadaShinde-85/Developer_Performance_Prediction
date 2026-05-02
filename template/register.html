@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<div class="container">
+
+<h2>Developer Registration</h2>
+
+<form method="post">
+
+<label>Full Name</label>
+<input type="text" name="name" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>Password</label>
+<input type="password" name="password" required>
+
+<label>Position</label>
+<input type="text" name="position">
+
+<label>Date of Birth</label>
+<input type="date" name="dob" required
+       onkeydown="return false"
+       onpaste="return false">
+
+<label>Age</label>
+<input type="number" name="age" id="age" readonly>
+
+<label>Contact Number</label>
+<input type="tel" name="contact" pattern="[0-9]{10}" required>
+
+<button type="submit">Register</button>
+
+</form>
+
+<div style="text-align:center; margin-top:15px;">
+    <span>Already have an account?</span>
+    <a href="/">Login here</a>
+</div>
+
+</div>
+
+<script>
+document.querySelector('input[name="dob"]').addEventListener('change', function() {
+    const dob = new Date(this.value);
+    const diff = Date.now() - dob.getTime();
+    const ageDate = new Date(diff);
+    document.getElementById('age').value =
+        Math.abs(ageDate.getUTCFullYear() - 1970);
+});
+</script>
+</body>
+</html>

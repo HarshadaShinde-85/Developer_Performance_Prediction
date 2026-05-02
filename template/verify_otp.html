@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<div class="container">
+
+<h2>Enter OTP</h2>
+
+<form action="/verify_otp" method="post">
+
+<input name="otp" placeholder="Enter OTP" required>
+
+<button>Verify OTP</button>
+
+</form>
+
+<br>
+
+{% if error %}
+<p style="color:red; text-align:center; font-weight:bold;">
+    {{ error }}
+</p>
+{% endif %}
+
+{% if success %}
+<p style="color:green; text-align:center; font-weight:bold;">
+    {{ success }}
+</p>
+{% endif %}
+
+</div>
+</body>
+</html>
